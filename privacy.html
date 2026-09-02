@@ -1,67 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>개인정보처리방침 / Privacy Policy — 이끼 키우기</title>
+<title>개인정보처리방침 — 이끼 키우기</title>
 <style>
-  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
-         max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.8; color: #222; }
-  h1 { font-size: 1.4rem; } h2 { font-size: 1.1rem; margin-top: 2.2rem; }
-  hr { margin: 3rem 0; border: none; border-top: 1px solid #ddd; }
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; font-family: system-ui, -apple-system, "Apple SD Gothic Neo",
+      "Noto Sans KR", sans-serif; line-height: 1.7;
+    background: #f2f7f3; color: #1f2a22;
+  }
+  @media (prefers-color-scheme: dark) { body { background: #121814; color: #dfe8e1; } }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 1.6rem; }
+  a { color: #28794a; }
+  code { background: #e4ece6; padding: 0 .35rem; border-radius: 4px; }
+  @media (prefers-color-scheme: dark) { code { background: #243028; } }
+  hr { border: 0; border-top: 1px solid #d7e5da; margin: 2rem 0; }
+  .en { color: #4f6854; }
+  @media (prefers-color-scheme: dark) { .en { color: #9fb7a5; } }
 </style>
 </head>
 <body>
+<main>
+  <h1>개인정보처리방침 <span class="en">/ Privacy Policy</span></h1>
+  <p class="en">Last updated: 2026-08-27</p>
 
-<h1>개인정보처리방침 — 이끼 키우기 (Moss Idle: Tiny Terrarium)</h1>
-<p>시행일: 2026-08-19 · 개발자: Ochi (1인 개발)</p>
+  <p>
+    본 방침은 <strong>이끼 키우기 (Moss Idle: Tiny Terrarium)</strong> 앱(이하 "앱")의
+    데이터 수집·이용·공유에 관해 설명합니다.
+    <span class="en">
+      This policy describes how the app <strong>Moss Idle: Tiny Terrarium</strong>
+      collects, uses, and shares data.
+    </span>
+  </p>
 
-<h2>1. 수집하는 개인정보</h2>
-<p>개발자는 이용자의 개인정보를 직접 수집·저장·전송하지 않습니다. 게임 진행 데이터는 이용자의 기기에만 로컬 저장되며, 앱을 삭제하면 모두 삭제됩니다.</p>
+  <h2>수집하는 데이터 / What we collect</h2>
+  <ul>
+    <li>광고 식별자(Advertising ID) — 광고 제공(AdMob) 목적
+        <span class="en">— Advertising ID, for ad serving (AdMob)</span></li>
+    <li>익명 사용 통계 — 제3자 분석(Firebase Analytics) 목적
+        <span class="en">— Anonymous usage statistics, for third-party analytics (Firebase)</span></li>
+    <li>비정상 종료 로그·진단 정보 — 앱 안정성 개선(Firebase Crashlytics) 목적
+        <span class="en">— Crash logs and diagnostics, to improve app stability (Firebase Crashlytics)</span></li>
+  </ul>
 
-<h2>2. 제3자 서비스</h2>
-<p>앱은 아래 Google 서비스를 사용하며, 이들 서비스가 각사의 개인정보처리방침에 따라 정보를 수집할 수 있습니다.</p>
-<ul>
-  <li><b>Google AdMob</b> (광고): 광고 ID, 광고 상호작용 정보가 Google에 의해 수집될 수 있습니다.
-    (<a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>)</li>
-  <li><b>Firebase Analytics</b> (사용 통계): 익명의 앱 사용 이벤트(예: 보상 수령, 업그레이드)가 수집됩니다.
-    개인을 식별하는 정보는 포함하지 않습니다.</li>
-  <li><b>Google Play 결제</b> (인앱결제): 결제 처리는 Google Play가 전담하며, 개발자는 결제 정보를 수집하지 않습니다.</li>
-</ul>
+  <h2>수집하지 않는 데이터 / What we do NOT collect</h2>
+  <ul>
+    <li>이름·이메일·전화번호 등 개인 식별 정보
+        <span class="en">— personal identifiers such as name, email, or phone number</span></li>
+    <li>위치 정보 <span class="en">— location data</span></li>
+  </ul>
 
-<h2>3. 아동</h2>
-<p>본 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+  <h2>데이터 공유 / Data sharing</h2>
+  <p>
+    위 데이터는 광고·분석·안정성 목적에 한해 Google(AdMob, Firebase Analytics,
+    Firebase Crashlytics)에 제공됩니다.
+    <span class="en">
+      The data above is shared with Google (AdMob, Firebase Analytics, Firebase
+      Crashlytics) solely for advertising, analytics, and stability purposes.
+    </span>
+  </p>
 
-<h2>4. 데이터 삭제</h2>
-<p>모든 게임 데이터는 기기 로컬에만 저장되므로 앱 삭제 시 함께 삭제됩니다. Firebase Analytics 데이터는 익명이며 개인 삭제 요청이 불가합니다.</p>
+  <h2>병 공유 / Jar sharing</h2>
+  <p>
+    유리병을 공유 코드·QR·링크로 친구에게 보낼 수 있습니다. 코드는 기기 안에서 만들어지며
+    우리 서버는 존재하지 않습니다 — 계정·친구 목록·검색 기능도 없습니다. 코드에는 유리병의
+    외형(진화 단계·품종·장식·생물)과 사용자가 직접 정한 별명(최대 12자)만 담기며, 전달은
+    사용자가 고른 앱(복사·QR·메신저)을 통해 이뤄집니다. 공유 링크에서 코드는 주소의
+    <code>#</code> 뒤에 놓여 웹 서버로 전송되지 않습니다.
+    <span class="en">
+      You can share your jar as a code, QR, or link. Codes are generated on your
+      device and there is no server, account, friend list, or search behind this
+      feature. A code carries only your jar's appearance (stage, species, decor,
+      creatures) and a nickname you choose (up to 12 characters), and it travels
+      through whichever app you pick. In a share link the code sits after the
+      <code>#</code>, so it is never sent to a web server.
+    </span>
+  </p>
 
-<h2>5. 문의</h2>
-<p><a href="https://github.com/Ochichan/moss-idle-site/issues">GitHub Issues</a></p>
+  <h2>보안 / Security</h2>
+  <p>
+    전송 중 데이터는 암호화(HTTPS)됩니다.
+    <span class="en">Data is encrypted in transit (HTTPS).</span>
+  </p>
 
-<hr>
+  <h2>데이터 보관·삭제 / Retention and deletion</h2>
+  <p>
+    게임 진행 상태는 기기 안에 저장됩니다. 사용자가 원하면 Google Play 게임즈의
+    저장된 게임(클라우드 저장)에 진행 상태를 백업할 수 있으며, 이 경우 데이터는 사용자의
+    Google 계정에 보관되고 Play 게임즈 설정에서 삭제할 수 있습니다. 앱을 삭제하면 로컬
+    데이터는 함께 삭제됩니다. 삭제 등 요청은 아래 연락처로 문의해 주세요.
+    <span class="en">
+      Game progress is stored on your device. If you choose to, you can back it up
+      to Google Play Games saved games (cloud save); that copy lives in your Google
+      account and can be deleted from Play Games settings. Uninstalling the app
+      deletes the local data. Contact us below for deletion or other requests.
+    </span>
+  </p>
 
-<h1>Privacy Policy — Moss Idle: Tiny Terrarium</h1>
-<p>Effective: 2026-08-19 · Developer: Ochi (individual)</p>
+  <h2>어린이 / Children</h2>
+  <p>
+    앱은 폭력·위치 공유가 없는 전체 이용가 게임이며, 앱 안에 채팅·친구 목록 등
+    이용자 간 통신 기능이 없습니다(병 공유는 사용자가 직접 코드를 전달하는 방식입니다).
+    만 13세 미만 아동에게 광고를 맞춤 제공하지 않습니다.
+    <span class="en">
+      The app is an all-ages game with no violence and no location sharing, and it
+      has no in-app chat, friend list, or other user-to-user communication (jar
+      sharing means you hand someone a code yourself). We do not serve personalized
+      ads to children under 13.
+    </span>
+  </p>
 
-<h2>1. Data we collect</h2>
-<p>The developer does not directly collect, store, or transmit any personal data. All game progress is stored locally on your device and is deleted when you uninstall the app.</p>
+  <h2>문의 / Contact</h2>
+  <p>
+    문의: <a href="https://github.com/ochichan/moss-idle-site/issues">GitHub Issues</a>
+    <span class="en">— Please open an issue at the link above.</span>
+  </p>
 
-<h2>2. Third-party services</h2>
-<ul>
-  <li><b>Google AdMob</b> (ads): may collect your advertising ID and ad interaction data under
-    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-  <li><b>Firebase Analytics</b>: collects anonymous app-usage events (e.g., reward claims, upgrades). No personally identifying information is included.</li>
-  <li><b>Google Play Billing</b>: purchases are processed entirely by Google Play; the developer receives no payment details.</li>
-</ul>
-
-<h2>3. Children</h2>
-<p>This app is not directed at children under 13 and does not knowingly collect their personal information.</p>
-
-<h2>4. Data deletion</h2>
-<p>All game data lives only on your device; uninstalling deletes it. Analytics data is anonymous and cannot be deleted per person.</p>
-
-<h2>5. Contact</h2>
-<p><a href="https://github.com/Ochichan/moss-idle-site/issues">GitHub Issues</a></p>
-
+  <hr>
+  <p><a href="index.html">← 이끼 키우기 홈 / Home</a></p>
+</main>
 </body>
 </html>

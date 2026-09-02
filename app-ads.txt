@@ -1,0 +1,3 @@
+# AdMob app-ads.txt — 이끼 키우기 (Moss Idle: Tiny Terrarium)
+# 게시자 ID는 AdMob 콘솔 → 앱 → 앱-ads.txt에서 제공하는 값을 최종 기준으로 사용.
+google.com, pub-4249069648949940, DIRECT, f08c47fec0942fa0
