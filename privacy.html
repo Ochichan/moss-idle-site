@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Local launch candidate. Publishing this file to the public policy URL is a separate external gate. -->
 <html lang="ko">
 <head>
 <meta charset="utf-8">
@@ -26,7 +27,7 @@
 <body>
 <main>
   <h1>개인정보처리방침 <span class="en">/ Privacy Policy</span></h1>
-  <p class="en">Last updated: 2026-08-27</p>
+  <p class="en">Last updated: 2026-09-24</p>
 
   <p>
     본 방침은 <strong>이끼 키우기 (Moss Idle: Tiny Terrarium)</strong> 앱(이하 "앱")의
@@ -41,17 +42,21 @@
   <ul>
     <li>광고 식별자(Advertising ID) — 광고 제공(AdMob) 목적
         <span class="en">— Advertising ID, for ad serving (AdMob)</span></li>
-    <li>익명 사용 통계 — 제3자 분석(Firebase Analytics) 목적
-        <span class="en">— Anonymous usage statistics, for third-party analytics (Firebase)</span></li>
+    <li>앱 이용·상호작용 정보 및 앱 인스턴스 식별자 — 제3자 분석(Firebase Analytics) 목적
+        <span class="en">— App usage, interactions and app instance identifiers, for third-party analytics (Firebase)</span></li>
     <li>비정상 종료 로그·진단 정보 — 앱 안정성 개선(Firebase Crashlytics) 목적
         <span class="en">— Crash logs and diagnostics, to improve app stability (Firebase Crashlytics)</span></li>
+    <li>IP 주소에서 추정되는 대략적인 위치, 광고 상호작용, 기기 식별자 및 진단 정보 — AdMob의 광고 제공·분석·부정행위 방지 목적
+        <span class="en">— Approximate location inferred from IP address, ad interactions, device identifiers and diagnostics, used by AdMob for advertising, analytics and fraud prevention</span></li>
+    <li>구매 처리에 필요한 상품 ID·영수증 해시 — Play Billing 중복 지급 방지. 앱 서버로 영수증을 보내지 않음.
+        <span class="en">— Product IDs and receipt hashes needed for Play Billing, to prevent duplicate grants. Receipts are not sent to an app server.</span></li>
   </ul>
 
   <h2>수집하지 않는 데이터 / What we do NOT collect</h2>
   <ul>
     <li>이름·이메일·전화번호 등 개인 식별 정보
         <span class="en">— personal identifiers such as name, email, or phone number</span></li>
-    <li>위치 정보 <span class="en">— location data</span></li>
+    <li>GPS 등 정밀 위치 정보 <span class="en">— precise location such as GPS coordinates</span></li>
   </ul>
 
   <h2>데이터 공유 / Data sharing</h2>
@@ -67,50 +72,63 @@
   <h2>병 공유 / Jar sharing</h2>
   <p>
     유리병을 공유 코드·QR·링크로 친구에게 보낼 수 있습니다. 코드는 기기 안에서 만들어지며
-    우리 서버는 존재하지 않습니다 — 계정·친구 목록·검색 기능도 없습니다. 코드에는 유리병의
+    이 기능을 위한 앱 자체 서버는 없습니다 — 앱 자체 계정·친구 목록·검색 기능도 없습니다. 코드에는 유리병의
     외형(진화 단계·품종·장식·생물)과 사용자가 직접 정한 별명(최대 12자)만 담기며, 전달은
     사용자가 고른 앱(복사·QR·메신저)을 통해 이뤄집니다. 공유 링크에서 코드는 주소의
     <code>#</code> 뒤에 놓여 웹 서버로 전송되지 않습니다.
     <span class="en">
       You can share your jar as a code, QR, or link. Codes are generated on your
-      device and there is no server, account, friend list, or search behind this
+      device and there is no Moss server, account, friend list, or search behind this
       feature. A code carries only your jar's appearance (stage, species, decor,
       creatures) and a nickname you choose (up to 12 characters), and it travels
       through whichever app you pick. In a share link the code sits after the
       <code>#</code>, so it is never sent to a web server.
     </span>
   </p>
+  <p>
+    공유 별명과 코드는 이 기능을 위해 기기에서만 처리되며 분석·진단 이벤트에 새로 첨부하지 않습니다.
+    <span class="en">
+      The shared nickname and code are processed locally for this feature and are
+      not added to analytics or diagnostics events.
+    </span>
+  </p>
 
   <h2>보안 / Security</h2>
   <p>
-    전송 중 데이터는 암호화(HTTPS)됩니다.
-    <span class="en">Data is encrypted in transit (HTTPS).</span>
+    Google SDK와 플랫폼 백업의 네트워크 전송은 해당 플랫폼의 보안 연결을 사용합니다. 사용자가 공유하는 코드·QR 자체는 암호화된 비밀 정보가 아니므로 별명에 개인정보를 넣지 마세요.
+    <span class="en">Google SDK and platform-backup network traffic uses the platform's secure connection. Shared codes and QR codes are not encrypted secrets; do not put personal information in your nickname.</span>
   </p>
 
   <h2>데이터 보관·삭제 / Retention and deletion</h2>
   <p>
-    게임 진행 상태는 기기 안에 저장됩니다. 사용자가 원하면 Google Play 게임즈의
-    저장된 게임(클라우드 저장)에 진행 상태를 백업할 수 있으며, 이 경우 데이터는 사용자의
-    Google 계정에 보관되고 Play 게임즈 설정에서 삭제할 수 있습니다. 앱을 삭제하면 로컬
-    데이터는 함께 삭제됩니다. 삭제 등 요청은 아래 연락처로 문의해 주세요.
+    게임 진행 상태는 먼저 기기 안에 저장됩니다. 사용자가 설정에서 직접 켜면 Android는
+    Google Play 게임즈, iPhone은 Game Center·iCloud를 통해 같은 플랫폼의 기기에 진행을
+    백업할 수 있습니다. 이 백업은 선택 사항이며 Android와 iPhone 사이의 교차 플랫폼 전송을
+    제공하지 않습니다. 백업 사용 가능 여부와 외부 사본의 보관·삭제는 해당 플랫폼 계정 및
+    저장 공간 설정을 따릅니다. 앱을 삭제하면 로컬 데이터는 함께 삭제되지만 외부 백업까지
+    자동으로 삭제된다는 뜻은 아닙니다. 삭제 등 요청은 아래 연락처로 문의해 주세요.
     <span class="en">
-      Game progress is stored on your device. If you choose to, you can back it up
-      to Google Play Games saved games (cloud save); that copy lives in your Google
-      account and can be deleted from Play Games settings. Uninstalling the app
-      deletes the local data. Contact us below for deletion or other requests.
+      Game progress is stored on your device first. If you explicitly enable backup
+      in Settings, Android can use Google Play Games and iPhone can use Game Center
+      and iCloud to back up progress to devices on the same platform. Backup is
+      optional and does not transfer progress between Android and iPhone. Availability,
+      retention, and deletion of an external copy follow the connected platform account
+      and storage settings. Uninstalling deletes local data; it does not necessarily
+      delete an external backup. Contact us below for deletion or other requests.
     </span>
   </p>
 
   <h2>어린이 / Children</h2>
   <p>
-    앱은 폭력·위치 공유가 없는 전체 이용가 게임이며, 앱 안에 채팅·친구 목록 등
-    이용자 간 통신 기능이 없습니다(병 공유는 사용자가 직접 코드를 전달하는 방식입니다).
-    만 13세 미만 아동에게 광고를 맞춤 제공하지 않습니다.
+    앱의 타깃 이용자는 만 13세 이상입니다. 만 13세 미만 아동을 대상으로 제작·홍보하지 않습니다.
+    스토어 콘텐츠 등급은 타깃 연령과 별개입니다. 앱에는 채팅이나 친구 검색 기능이 없습니다.
+    광고 동의가 필요한 지역에서는 동의 절차를 제공하며, 설정에 표시되는 '광고 개인정보 설정'에서
+    선택을 변경할 수 있습니다. 타깃 연령 표시는 이용자의 실제 나이를 확인했다는 의미가 아닙니다.
     <span class="en">
-      The app is an all-ages game with no violence and no location sharing, and it
-      has no in-app chat, friend list, or other user-to-user communication (jar
-      sharing means you hand someone a code yourself). We do not serve personalized
-      ads to children under 13.
+      The app is intended for ages 13 and older and is not designed or marketed for children under 13.
+      The store content rating is separate from this intended audience. There is no in-app chat or friend search.
+      Where required, an advertising consent form is provided; choices can be changed through
+      Ad privacy options when that entry is shown in Settings. The intended audience is not a verification of a user's actual age.
     </span>
   </p>
 
